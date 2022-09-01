@@ -19,10 +19,10 @@ class InfoMessage:
     def get_message(self) -> str:
         """Возвращает строку сообщения о выполненной тренировке."""
         return (f'Тип тренировки: {self.training_type}; '
-                f'Длительность: { round(self.duration, 3) } ч.; '
-                f'Дистанция: { round(self.distance, 3)} км; '
-                f'Ср. скорость: { round(self.speed, 3)} км/ч; '
-                f'Потрачено ккал: {round(self.calories, 3)}.'
+                f'Длительность: { self.duration:.3f} ч.; '
+                f'Дистанция: { self.distance:.3f} км; '
+                f'Ср. скорость: { self.speed:.3f} км/ч; '
+                f'Потрачено ккал: { self.calories:.3f}.'
                 )
 
 
