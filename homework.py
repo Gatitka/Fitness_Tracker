@@ -126,7 +126,7 @@ def read_package(workout_type: str, data: list) -> Training:
                       'WLK': SportsWalking
                       }
     if workout_type not in trainings_dict:
-        raise ValueError('Неизвестный тип тренировки')
+        raise ValueError(f'Неизвестный тип тренировки {workout_type}')
     return trainings_dict[workout_type](*data)
 
 
